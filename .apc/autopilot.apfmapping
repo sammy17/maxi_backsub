@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="core.cpp" path="/home/chathura/backsub_maxi/core.cpp"/>
+    <originFiles name="core.h" path="/home/chathura/backsub_maxi/core.h"/>
+  </source>
+  <testbench>
+    <originFiles name="test.h" path="/home/chathura/backsub_maxi/test.h"/>
+    <originFiles name="test.cpp" path="/home/chathura/backsub_maxi/test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

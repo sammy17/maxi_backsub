@@ -1,0 +1,167 @@
+
+
+================================================================
+== Vivado HLS Report for 'backsub_hls_fptoui_float_i8'
+================================================================
+* Date:           Mon Nov 20 00:46:42 2017
+
+* Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
+* Project:        backsub_maxi
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      7.75|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+----------+
+    |  Latency  |  Interval | Pipeline |
+    | min | max | min | max |   Type   |
+    +-----+-----+-----+-----+----------+
+    |    1|    1|    1|    1| function |
+    +-----+-----+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states: 2
+* Pipeline: 1
+  Pipeline-0: II = 1, D = 2, States = { 1 2 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+* FSM state operations: 
+
+ <State 1>: 7.75ns
+ST_1: x_read [1/1] 1.87ns
+_ifconv:0  %x_read = call float @_ssdm_op_Read.ap_auto.float(float %x) nounwind
+
+ST_1: p_Val2_s [1/1] 0.00ns
+_ifconv:1  %p_Val2_s = bitcast float %x_read to i32
+
+ST_1: loc_V [1/1] 0.00ns
+_ifconv:2  %loc_V = call i8 @_ssdm_op_PartSelect.i8.i32.i32.i32(i32 %p_Val2_s, i32 23, i32 30) nounwind
+
+ST_1: loc_V_1 [1/1] 0.00ns
+_ifconv:3  %loc_V_1 = trunc i32 %p_Val2_s to i23
+
+ST_1: p_Result_s [1/1] 0.00ns
+_ifconv:4  %p_Result_s = call i24 @_ssdm_op_BitConcatenate.i24.i1.i23(i1 true, i23 %loc_V_1) nounwind
+
+ST_1: tmp_8_i [1/1] 0.00ns
+_ifconv:5  %tmp_8_i = zext i24 %p_Result_s to i54
+
+ST_1: tmp_i_i_cast1 [1/1] 0.00ns
+_ifconv:6  %tmp_i_i_cast1 = zext i8 %loc_V to i9
+
+ST_1: sh_assign [1/1] 1.72ns
+_ifconv:7  %sh_assign = add i9 -127, %tmp_i_i_cast1
+
+ST_1: isNeg [1/1] 0.00ns
+_ifconv:8  %isNeg = call i1 @_ssdm_op_BitSelect.i1.i9.i32(i9 %sh_assign, i32 8)
+
+ST_1: tmp_i [1/1] 1.72ns
+_ifconv:9  %tmp_i = sub i8 127, %loc_V
+
+ST_1: tmp_i_cast [1/1] 0.00ns
+_ifconv:10  %tmp_i_cast = sext i8 %tmp_i to i9
+
+ST_1: sh_assign_1 [1/1] 1.37ns
+_ifconv:11  %sh_assign_1 = select i1 %isNeg, i9 %tmp_i_cast, i9 %sh_assign
+
+ST_1: sh_assign_1_cast [1/1] 0.00ns
+_ifconv:12  %sh_assign_1_cast = sext i9 %sh_assign_1 to i32
+
+ST_1: sh_assign_1_cast_cast [1/1] 0.00ns
+_ifconv:13  %sh_assign_1_cast_cast = sext i9 %sh_assign_1 to i24
+
+ST_1: tmp_1_i [1/1] 0.00ns
+_ifconv:14  %tmp_1_i = zext i32 %sh_assign_1_cast to i54
+
+ST_1: tmp_2_i [1/1] 2.78ns
+_ifconv:15  %tmp_2_i = lshr i24 %p_Result_s, %sh_assign_1_cast_cast
+
+ST_1: tmp_4_i [1/1] 2.78ns
+_ifconv:16  %tmp_4_i = shl i54 %tmp_8_i, %tmp_1_i
+
+ST_1: tmp_109 [1/1] 0.00ns
+_ifconv:17  %tmp_109 = call i1 @_ssdm_op_BitSelect.i1.i24.i32(i24 %tmp_2_i, i32 23)
+
+ST_1: tmp_17 [1/1] 0.00ns
+_ifconv:19  %tmp_17 = call i8 @_ssdm_op_PartSelect.i8.i54.i32.i32(i54 %tmp_4_i, i32 23, i32 30)
+
+
+ <State 2>: 1.37ns
+ST_2: tmp [1/1] 0.00ns
+_ifconv:18  %tmp = zext i1 %tmp_109 to i8
+
+ST_2: result_V [1/1] 1.37ns
+_ifconv:20  %result_V = select i1 %isNeg, i8 %tmp, i8 %tmp_17
+
+ST_2: stg_24 [1/1] 0.00ns
+_ifconv:21  ret i8 %result_V
+
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

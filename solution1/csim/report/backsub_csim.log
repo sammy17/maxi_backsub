@@ -1,0 +1,5 @@
+   Compiling ../../../test.cpp in debug mode
+   Compiling ../../../core.cpp in debug mode
+   Generating csim.exe
+Could not queue buffer, VIDIOC_QBUF: No such device
+@E [SIM-1] 'csim_design' failed: nonzero return value.

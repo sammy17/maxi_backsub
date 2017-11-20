@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="@W [SCHED-69] Unable to schedule 'load' operation ('val', backsub_maxi/core.cpp:26) on array 'yuv_frame', backsub_maxi/core.cpp:15 due to limited memory ports." projectName="backsub_maxi" solutionName="solution1" date="2017-11-20T00:46:45.450+0530" type="Warning"/>
+        <logs message="@W [SCHED-69] Unable to schedule 'load' operation ('frame_load_16', backsub_maxi/core.cpp:48) on array 'frame' due to limited memory ports." projectName="backsub_maxi" solutionName="solution1" date="2017-11-20T00:46:44.986+0530" type="Warning"/>
+        <logs message="@W [SYN-103] Legalizing function name 'backsub___hls_fptoui_float_i8' to 'backsub_hls_fptoui_float_i8'." projectName="backsub_maxi" solutionName="solution1" date="2017-11-20T00:46:41.500+0530" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="@W [SIM-368] AXI_master port 'gmem_offset' has a default depth of 1. Insufficient depth may cause simulation mismatch or freeze. Please specify the depth in 'set_directive_interface' using the option '-depth'.&#xA;   Build using &quot;/opt/Xilinx/Vivado_HLS/2015.4/lnx64/tools/gcc/bin/g++&quot;&#xA;   Compiling core.cpp_pre.cpp.tb.cpp&#xA;   Compiling apatb_backsub.cpp&#xA;   Compiling test.cpp_pre.cpp.tb.cpp&#xA;   Generating cosim.tv.exe" projectName="backsub_maxi" solutionName="solution1" date="2017-11-20T00:51:38.540+0530" type="Warning"/>
+        <logs message="@W [SIM-368] AXI_master port 'gmem' has a default depth of 1. Insufficient depth may cause simulation mismatch or freeze. Please specify the depth in 'set_directive_interface' using the option '-depth'." projectName="backsub_maxi" solutionName="solution1" date="2017-11-20T00:48:14.777+0530" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
