@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'backsub_hls_fptoui_float_i8'" level="0">
-<item name = "Date">Mon Nov 20 00:46:47 2017
+<item name = "Date">Tue Nov 21 01:04:41 2017
 </item>
 <item name = "Version">2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)</item>
 <item name = "Project">backsub_maxi</item>

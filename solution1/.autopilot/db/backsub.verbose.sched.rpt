@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'backsub'
 ================================================================
-* Date:           Mon Nov 20 00:46:45 2017
+* Date:           Tue Nov 21 01:04:38 2017
 
 * Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
 * Project:        backsub_maxi
@@ -378,7 +378,7 @@ ST_8: stg_126 [1/1] 0.00ns
 :5  call void (...)* @_ssdm_op_SpecBitsMap(i32* %gmem), !map !17
 
 ST_8: stg_127 [1/1] 0.00ns
-:6  call void (...)* @_ssdm_op_SpecBitsMap([76800 x i16]* %frame) nounwind, !map !21
+:6  call void (...)* @_ssdm_op_SpecBitsMap([76800 x i16]* %frame) nounwind, !map !23
 
 ST_8: stg_128 [1/1] 0.00ns
 :7  call void (...)* @_ssdm_op_SpecBitsMap(i1 %init) nounwind, !map !27
@@ -390,19 +390,19 @@ ST_8: stg_130 [1/1] 0.00ns
 :9  call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @backsub_str) nounwind
 
 ST_8: stg_131 [1/1] 0.00ns
-:12  call void (...)* @_ssdm_op_SpecInterface(i8* %gmem_offset, [6 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+:12  call void (...)* @_ssdm_op_SpecInterface(i8* %gmem_offset, [6 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 76800, [1 x i8]* @p_str1806, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
 
 ST_8: stg_132 [1/1] 0.00ns
-:13  call void (...)* @_ssdm_op_SpecInterface(i32 %frame_out, [10 x i8]* @mode1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @bundle2, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+:13  call void (...)* @_ssdm_op_SpecInterface(i32 %frame_out, [10 x i8]* @mode1, i32 0, i32 0, i32 0, i32 76800, [1 x i8]* @bundle2, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
 
 ST_8: stg_133 [1/1] 0.00ns
-:14  call void (...)* @_ssdm_op_SpecInterface(i32* %gmem, [6 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+:14  call void (...)* @_ssdm_op_SpecInterface(i32* %gmem, [6 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 38400, [1 x i8]* @p_str1806, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
 
 ST_8: stg_134 [1/1] 0.00ns
-:15  call void (...)* @_ssdm_op_SpecInterface(i32 %frame_in, [10 x i8]* @mode, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @bundle, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+:15  call void (...)* @_ssdm_op_SpecInterface(i32 %frame_in, [10 x i8]* @mode, i32 0, i32 0, i32 0, i32 38400, [1 x i8]* @bundle, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
 
 ST_8: stg_135 [1/1] 0.00ns
-:16  call void (...)* @_ssdm_op_SpecInterface([76800 x i16]* %frame, [5 x i8]* @p_str1808, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+:16  call void (...)* @_ssdm_op_SpecInterface([76800 x i16]* %frame, [5 x i8]* @p_str1808, i32 0, i32 0, i32 0, i32 76800, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
 
 ST_8: stg_136 [1/1] 0.00ns
 :17  call void (...)* @_ssdm_op_SpecInterface(i1 %init, [10 x i8]* @p_str1809, i32 0, i32 0, i32 0, i32 0, [9 x i8]* @p_str1810, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind

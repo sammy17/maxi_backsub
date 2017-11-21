@@ -2,9 +2,9 @@
 #include <hls_math.h>
 
 int backsub(uint32_t * frame_in, uint8_t * frame_out,uint16_t frame[76800], bool init) {
-#pragma HLS INTERFACE m_axi port=frame_out offset=slave
-#pragma HLS INTERFACE m_axi port=frame_in offset=slave
-#pragma HLS INTERFACE bram port=frame
+#pragma HLS INTERFACE m_axi depth=76800 port=frame_out offset=slave
+#pragma HLS INTERFACE m_axi depth=38400 port=frame_in offset=slave
+#pragma HLS INTERFACE bram depth=76800 port=frame
 #pragma HLS INTERFACE s_axilite port=init bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=return bundle=CRTL_BUS
 

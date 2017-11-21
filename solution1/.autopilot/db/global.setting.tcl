@@ -43,8 +43,8 @@ set SCTraceOption "all"
 set TargetInfo "xc7z020:clg484:-1"
 set SourceFiles {sc {} c ../core.cpp}
 set SourceFlags {sc {} c {{}}}
-set DirectiveFile {/home/chathura/backsub_maxi/solution1/solution1.directive}
-set TBFiles {verilog {../test.h ../test.cpp} bc {../test.h ../test.cpp} sc {../test.h ../test.cpp} vhdl {../test.h ../test.cpp} c {} cas {../test.h ../test.cpp}}
+set DirectiveFile {F:/maxi/backsub_maxi/solution1/solution1.directive}
+set TBFiles {verilog {../test.cpp ../test.h} bc {../test.cpp ../test.h} sc {../test.cpp ../test.h} vhdl {../test.cpp ../test.h} c {} cas {../test.cpp ../test.h}}
 set SpecLanguage "C"
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

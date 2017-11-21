@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'backsub'" level="0">
-<item name = "Date">Mon Nov 20 00:46:49 2017
+<item name = "Date">Tue Nov 21 01:04:44 2017
 </item>
 <item name = "Version">2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)</item>
 <item name = "Project">backsub_maxi</item>
@@ -68,17 +68,17 @@
 <keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
 <column name="backsub_AXILiteS_s_axi_U">backsub_AXILiteS_s_axi, 0, 0, 106, 168</column>
 <column name="backsub_CRTL_BUS_s_axi_U">backsub_CRTL_BUS_s_axi, 0, 0, 75, 106</column>
+<column name="backsub_fadd_32ns_32ns_32_5_full_dsp_U1">backsub_fadd_32ns_32ns_32_5_full_dsp, 0, 2, 205, 390</column>
 <column name="backsub_fadd_32ns_32ns_32_5_full_dsp_U2">backsub_fadd_32ns_32ns_32_5_full_dsp, 0, 2, 205, 390</column>
-<column name="backsub_fadd_32ns_32ns_32_5_full_dsp_U3">backsub_fadd_32ns_32ns_32_5_full_dsp, 0, 2, 205, 390</column>
+<column name="backsub_fmul_32ns_32ns_32_4_max_dsp_U3">backsub_fmul_32ns_32ns_32_4_max_dsp, 0, 3, 143, 321</column>
 <column name="backsub_fmul_32ns_32ns_32_4_max_dsp_U4">backsub_fmul_32ns_32ns_32_4_max_dsp, 0, 3, 143, 321</column>
 <column name="backsub_fmul_32ns_32ns_32_4_max_dsp_U5">backsub_fmul_32ns_32ns_32_4_max_dsp, 0, 3, 143, 321</column>
-<column name="backsub_fmul_32ns_32ns_32_4_max_dsp_U6">backsub_fmul_32ns_32ns_32_4_max_dsp, 0, 3, 143, 321</column>
 <column name="backsub_gmem_m_axi_U">backsub_gmem_m_axi, 0, 0, 548, 700</column>
 <column name="backsub_gmem_offset_m_axi_U">backsub_gmem_offset_m_axi, 0, 0, 548, 700</column>
 <column name="grp_backsub_hls_fptoui_float_i8_fu_1529">backsub_hls_fptoui_float_i8, 0, 0, 10, 257</column>
+<column name="backsub_sitofp_32ns_32_6_U6">backsub_sitofp_32ns_32_6, 0, 0, 340, 554</column>
 <column name="backsub_sitofp_32ns_32_6_U7">backsub_sitofp_32ns_32_6, 0, 0, 340, 554</column>
 <column name="backsub_sitofp_32ns_32_6_U8">backsub_sitofp_32ns_32_6, 0, 0, 340, 554</column>
-<column name="backsub_sitofp_32ns_32_6_U9">backsub_sitofp_32ns_32_6, 0, 0, 340, 554</column>
 </table>
 </item>
 <item name = "DSP48"><table name="" hasTotal="0">

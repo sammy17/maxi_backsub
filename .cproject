@@ -25,11 +25,13 @@
 								<option id="gnu.cpp.compiler.exe.debug.option.optimization.level.525683995" name="Optimization Level" superClass="gnu.cpp.compiler.exe.debug.option.optimization.level" value="gnu.cpp.compiler.optimization.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.exe.debug.option.debugging.level.144745333" name="Debug Level" superClass="gnu.cpp.compiler.exe.debug.option.debugging.level" value="gnu.cpp.compiler.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.497715726" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/home/chathura/feature_IP/maxi"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/include/etc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="F:/maxi"/>
 								</option>
 								<option id="gnu.cpp.compiler.option.preprocessor.def.2009093814" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="AESL_TB"/>
@@ -42,11 +44,13 @@
 								<option defaultValue="gnu.c.optimization.level.none" id="gnu.c.compiler.exe.debug.option.optimization.level.645047528" name="Optimization Level" superClass="gnu.c.compiler.exe.debug.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.exe.debug.option.debugging.level.1450309358" name="Debug Level" superClass="gnu.c.compiler.exe.debug.option.debugging.level" value="gnu.c.debugging.level.max" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1176589044" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/home/chathura/feature_IP/maxi"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/include/etc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="F:/maxi"/>
 								</option>
 								<option id="gnu.c.compiler.option.preprocessor.def.symbols.917963543" name="Defined symbols (-D)" superClass="gnu.c.compiler.option.preprocessor.def.symbols" valueType="definedSymbols">
 									<listOptionValue builtIn="false" value="AESL_TB"/>
@@ -109,11 +113,13 @@
 								<option id="gnu.cpp.compiler.exe.release.option.optimization.level.1290560564" name="Optimization Level" superClass="gnu.cpp.compiler.exe.release.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.exe.release.option.debugging.level.1439878518" name="Debug Level" superClass="gnu.cpp.compiler.exe.release.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.cpp.compiler.option.include.paths.1273850219" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/home/chathura/feature_IP/maxi"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/include/etc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="F:/maxi"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.619874258" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
@@ -121,11 +127,13 @@
 								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.exe.release.option.optimization.level.1855256339" name="Optimization Level" superClass="gnu.c.compiler.exe.release.option.optimization.level" valueType="enumerated"/>
 								<option id="gnu.c.compiler.exe.release.option.debugging.level.659367578" name="Debug Level" superClass="gnu.c.compiler.exe.release.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
 								<option id="gnu.c.compiler.option.include.paths.1614844804" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="/home/chathura/feature_IP/maxi"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/lnx64/tools/auto_cc/include"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/include/etc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/include/ap_sysc"/>
 									<listOptionValue builtIn="false" value="/opt/Xilinx/Vivado_HLS/2015.4/lnx64/tools/systemc/include"/>
+									<listOptionValue builtIn="false" value="F:/maxi"/>
 								</option>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.2004487088" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>

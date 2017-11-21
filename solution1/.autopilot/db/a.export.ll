@@ -1,12 +1,12 @@
-; ModuleID = '/home/chathura/backsub_maxi/solution1/.autopilot/db/a.o.2.bc'
+; ModuleID = 'F:/maxi/backsub_maxi/solution1/.autopilot/db/a.o.2.bc'
 target datalayout = "e-p:64:64:64-i1:8:8-i8:8:8-i16:16:16-i32:32:32-i64:64:64-f32:32:32-f64:64:64-v64:64:64-v128:128:128-a0:0:64-s0:64:64-f80:128:128-n8:16:32:64-S128"
-target triple = "x86_64-unknown-linux-gnu"
+target triple = "x86_64-w64-mingw32"
 
 @mode1 = internal constant [10 x i8] c"s_axilite\00"
 @mode = internal constant [10 x i8] c"s_axilite\00"
 @memcpy_OC_yuv_frame_OC_frame_i = internal unnamed_addr constant [26 x i8] c"memcpy.yuv_frame.frame_in\00"
 @memcpy_OC_frame_out_OC_str = internal unnamed_addr constant [18 x i8] c"memcpy.frame_out.\00"
-@llvm_global_ctors_1 = appending global [2 x void ()*] [void ()* @_GLOBAL__I_a, void ()* @_GLOBAL__I_a1938]
+@llvm_global_ctors_1 = appending global [2 x void ()*] [void ()* @_GLOBAL__I_a, void ()* @_GLOBAL__I_a1941]
 @llvm_global_ctors_0 = appending global [2 x i32] [i32 65535, i32 65535]
 @burstwrite_OC_region_str = internal unnamed_addr constant [18 x i8] c"burstwrite.region\00"
 @burstread_OC_region_str = internal unnamed_addr constant [17 x i8] c"burstread.region\00"
@@ -14,8 +14,8 @@ target triple = "x86_64-unknown-linux-gnu"
 @bundle = internal constant [1 x i8] zeroinitializer
 @backsub_str = internal unnamed_addr constant [8 x i8] c"backsub\00"
 @p_str2 = internal unnamed_addr constant [1 x i8] zeroinitializer
-@p_str1813 = private unnamed_addr constant [12 x i8] c"hls_label_0\00", align 1
-@p_str1812 = private unnamed_addr constant [12 x i8] c"hls_label_1\00", align 1
+@p_str1813 = private unnamed_addr constant [12 x i8] c"hls_label_1\00", align 1
+@p_str1812 = private unnamed_addr constant [12 x i8] c"hls_label_0\00", align 1
 @p_str1811 = private unnamed_addr constant [6 x i8] c"loop1\00", align 1
 @p_str1810 = private unnamed_addr constant [9 x i8] c"CRTL_BUS\00", align 1
 @p_str1809 = private unnamed_addr constant [10 x i8] c"s_axilite\00", align 1
@@ -44,17 +44,17 @@ define i32 @backsub(i32* %gmem, i8* %gmem_offset, i32 %frame_in, i32 %frame_out,
   %tmp_13 = call i30 @_ssdm_op_PartSelect.i30.i32.i32.i32(i32 %frame_in_read, i32 2, i32 31)
   call void (...)* @_ssdm_op_SpecBitsMap(i8* %gmem_offset), !map !11
   call void (...)* @_ssdm_op_SpecBitsMap(i32* %gmem), !map !17
-  call void (...)* @_ssdm_op_SpecBitsMap([76800 x i16]* %frame) nounwind, !map !21
+  call void (...)* @_ssdm_op_SpecBitsMap([76800 x i16]* %frame) nounwind, !map !23
   call void (...)* @_ssdm_op_SpecBitsMap(i1 %init) nounwind, !map !27
   call void (...)* @_ssdm_op_SpecBitsMap(i32 0) nounwind, !map !33
   call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @backsub_str) nounwind
   %yuv_frame = alloca [38400 x i32], align 16
   %grey_frame = alloca [76800 x i8], align 16
-  call void (...)* @_ssdm_op_SpecInterface(i8* %gmem_offset, [6 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
-  call void (...)* @_ssdm_op_SpecInterface(i32 %frame_out, [10 x i8]* @mode1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @bundle2, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
-  call void (...)* @_ssdm_op_SpecInterface(i32* %gmem, [6 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
-  call void (...)* @_ssdm_op_SpecInterface(i32 %frame_in, [10 x i8]* @mode, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @bundle, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
-  call void (...)* @_ssdm_op_SpecInterface([76800 x i16]* %frame, [5 x i8]* @p_str1808, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+  call void (...)* @_ssdm_op_SpecInterface(i8* %gmem_offset, [6 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 76800, [1 x i8]* @p_str1806, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+  call void (...)* @_ssdm_op_SpecInterface(i32 %frame_out, [10 x i8]* @mode1, i32 0, i32 0, i32 0, i32 76800, [1 x i8]* @bundle2, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+  call void (...)* @_ssdm_op_SpecInterface(i32* %gmem, [6 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 38400, [1 x i8]* @p_str1806, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+  call void (...)* @_ssdm_op_SpecInterface(i32 %frame_in, [10 x i8]* @mode, i32 0, i32 0, i32 0, i32 38400, [1 x i8]* @bundle, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+  call void (...)* @_ssdm_op_SpecInterface([76800 x i16]* %frame, [5 x i8]* @p_str1808, i32 0, i32 0, i32 0, i32 76800, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
   call void (...)* @_ssdm_op_SpecInterface(i1 %init, [10 x i8]* @p_str1809, i32 0, i32 0, i32 0, i32 0, [9 x i8]* @p_str1810, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
   call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str1809, i32 0, i32 0, i32 0, i32 0, [9 x i8]* @p_str1810, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
   %tmp_16 = zext i30 %tmp_13 to i64
@@ -1702,9 +1702,9 @@ _ifconv:
   ret i8 %result_V
 }
 
-declare void @_GLOBAL__I_a1938() nounwind section ".text.startup"
+declare void @_GLOBAL__I_a1941() nounwind
 
-declare void @_GLOBAL__I_a() nounwind section ".text.startup"
+declare void @_GLOBAL__I_a() nounwind
 
 !hls.encrypted.func = !{}
 !llvm.map.gv = !{!0}
@@ -1727,17 +1727,17 @@ declare void @_GLOBAL__I_a() nounwind section ".text.startup"
 !13 = metadata !{metadata !14}
 !14 = metadata !{metadata !"frame_out", metadata !15, metadata !"unsigned char", i32 0, i32 7}
 !15 = metadata !{metadata !16}
-!16 = metadata !{i32 0, i32 0, i32 1}
+!16 = metadata !{i32 0, i32 76799, i32 1}
 !17 = metadata !{metadata !18}
 !18 = metadata !{i32 0, i32 31, metadata !19}
 !19 = metadata !{metadata !20}
-!20 = metadata !{metadata !"frame_in", metadata !15, metadata !"unsigned int", i32 0, i32 31}
+!20 = metadata !{metadata !"frame_in", metadata !21, metadata !"unsigned int", i32 0, i32 31}
 !21 = metadata !{metadata !22}
-!22 = metadata !{i32 0, i32 15, metadata !23}
+!22 = metadata !{i32 0, i32 38399, i32 1}
 !23 = metadata !{metadata !24}
-!24 = metadata !{metadata !"frame", metadata !25, metadata !"unsigned short", i32 0, i32 15}
+!24 = metadata !{i32 0, i32 15, metadata !25}
 !25 = metadata !{metadata !26}
-!26 = metadata !{i32 0, i32 76799, i32 1}
+!26 = metadata !{metadata !"frame", metadata !15, metadata !"unsigned short", i32 0, i32 15}
 !27 = metadata !{metadata !28}
 !28 = metadata !{i32 0, i32 0, metadata !29}
 !29 = metadata !{metadata !30}

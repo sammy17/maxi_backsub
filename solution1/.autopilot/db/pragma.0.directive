@@ -3,6 +3,7 @@
 <directive functionLabel="" functionName="backsub" label="">
 <pragma name="INTERFACE">
 <option name="m_axi" positionalBoolean="mode" value=""/>
+<option name="depth" value="76800"/>
 <option name="port" positionalBoolean="4" value="frame_out"/>
 <option name="offset" value="slave"/>
 </pragma>
@@ -10,6 +11,7 @@
 <directive functionLabel="" functionName="backsub" label="">
 <pragma name="INTERFACE">
 <option name="m_axi" positionalBoolean="mode" value=""/>
+<option name="depth" value="38400"/>
 <option name="port" positionalBoolean="4" value="frame_in"/>
 <option name="offset" value="slave"/>
 </pragma>
@@ -17,6 +19,7 @@
 <directive functionLabel="" functionName="backsub" label="">
 <pragma name="INTERFACE">
 <option name="bram" positionalBoolean="mode" value=""/>
+<option name="depth" value="76800"/>
 <option name="port" positionalBoolean="4" value="frame"/>
 </pragma>
 </directive>

@@ -1,0 +1,27 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:43:45 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Tue Nov 21 01:12:41 2017
+# Process ID: 3432
+# Current directory: F:/maxi/backsub_maxi/solution1/impl/ip
+# Command line: vivado.exe -notrace -mode batch -source run_ippack.tcl
+# Log file: F:/maxi/backsub_maxi/solution1/impl/ip/vivado.log
+# Journal file: F:/maxi/backsub_maxi/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2015.4/data/ip'.
+create_ip: Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 202.750 ; gain = 14.922
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'backsub_ap_fadd_3_full_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'backsub_ap_fadd_3_full_dsp_32'...
+generate_target: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 215.828 ; gain = 6.645
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'backsub_ap_fmul_2_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'backsub_ap_fmul_2_max_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'backsub_ap_sitofp_4_no_dsp_32'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'backsub_ap_sitofp_4_no_dsp_32'...
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'F:/Xilinx/Vivado/2015.4/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 21 01:13:37 2017...

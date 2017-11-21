@@ -974,7 +974,7 @@
 
 <node id="13" bw="0" op_0_bw="0" op_1_bw="16">
 <![CDATA[
-:6  call void (...)* @_ssdm_op_SpecBitsMap([76800 x i16]* %frame) nounwind, !map !21
+:6  call void (...)* @_ssdm_op_SpecBitsMap([76800 x i16]* %frame) nounwind, !map !23
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1034,7 +1034,7 @@
 
 <node id="19" bw="0" op_0_bw="0" op_1_bw="8" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8">
 <![CDATA[
-:12  call void (...)* @_ssdm_op_SpecInterface(i8* %gmem_offset, [6 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+:12  call void (...)* @_ssdm_op_SpecInterface(i8* %gmem_offset, [6 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 76800, [1 x i8]* @p_str1806, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1049,7 +1049,7 @@
 
 <node id="20" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8">
 <![CDATA[
-:13  call void (...)* @_ssdm_op_SpecInterface(i32 %frame_out, [10 x i8]* @mode1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @bundle2, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+:13  call void (...)* @_ssdm_op_SpecInterface(i32 %frame_out, [10 x i8]* @mode1, i32 0, i32 0, i32 0, i32 76800, [1 x i8]* @bundle2, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1064,7 +1064,7 @@
 
 <node id="21" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8">
 <![CDATA[
-:14  call void (...)* @_ssdm_op_SpecInterface(i32* %gmem, [6 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+:14  call void (...)* @_ssdm_op_SpecInterface(i32* %gmem, [6 x i8]* @p_str1805, i32 0, i32 0, i32 0, i32 38400, [1 x i8]* @p_str1806, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1079,7 +1079,7 @@
 
 <node id="22" bw="0" op_0_bw="0" op_1_bw="32" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8">
 <![CDATA[
-:15  call void (...)* @_ssdm_op_SpecInterface(i32 %frame_in, [10 x i8]* @mode, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @bundle, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+:15  call void (...)* @_ssdm_op_SpecInterface(i32 %frame_in, [10 x i8]* @mode, i32 0, i32 0, i32 0, i32 38400, [1 x i8]* @bundle, [6 x i8]* @p_str1807, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>
@@ -1094,7 +1094,7 @@
 
 <node id="23" bw="0" op_0_bw="0" op_1_bw="16" op_2_bw="8" op_3_bw="32" op_4_bw="32" op_5_bw="32" op_6_bw="32" op_7_bw="8" op_8_bw="8" op_9_bw="8" op_10_bw="8">
 <![CDATA[
-:16  call void (...)* @_ssdm_op_SpecInterface([76800 x i16]* %frame, [5 x i8]* @p_str1808, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
+:16  call void (...)* @_ssdm_op_SpecInterface([76800 x i16]* %frame, [5 x i8]* @p_str1808, i32 0, i32 0, i32 0, i32 76800, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806, [1 x i8]* @p_str1806) nounwind
 
 ]]></node>
 <StgValue><ssdm name=""/></StgValue>

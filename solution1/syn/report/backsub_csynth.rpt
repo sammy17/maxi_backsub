@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'backsub'
 ================================================================
-* Date:           Mon Nov 20 00:46:49 2017
+* Date:           Tue Nov 21 01:04:44 2017
 
 * Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
 * Project:        backsub_maxi
@@ -83,17 +83,17 @@
     +-----------------------------------------+--------------------------------------+---------+-------+-----+-----+
     |backsub_AXILiteS_s_axi_U                 |backsub_AXILiteS_s_axi                |        0|      0|  106|  168|
     |backsub_CRTL_BUS_s_axi_U                 |backsub_CRTL_BUS_s_axi                |        0|      0|   75|  106|
+    |backsub_fadd_32ns_32ns_32_5_full_dsp_U1  |backsub_fadd_32ns_32ns_32_5_full_dsp  |        0|      2|  205|  390|
     |backsub_fadd_32ns_32ns_32_5_full_dsp_U2  |backsub_fadd_32ns_32ns_32_5_full_dsp  |        0|      2|  205|  390|
-    |backsub_fadd_32ns_32ns_32_5_full_dsp_U3  |backsub_fadd_32ns_32ns_32_5_full_dsp  |        0|      2|  205|  390|
+    |backsub_fmul_32ns_32ns_32_4_max_dsp_U3   |backsub_fmul_32ns_32ns_32_4_max_dsp   |        0|      3|  143|  321|
     |backsub_fmul_32ns_32ns_32_4_max_dsp_U4   |backsub_fmul_32ns_32ns_32_4_max_dsp   |        0|      3|  143|  321|
     |backsub_fmul_32ns_32ns_32_4_max_dsp_U5   |backsub_fmul_32ns_32ns_32_4_max_dsp   |        0|      3|  143|  321|
-    |backsub_fmul_32ns_32ns_32_4_max_dsp_U6   |backsub_fmul_32ns_32ns_32_4_max_dsp   |        0|      3|  143|  321|
     |backsub_gmem_m_axi_U                     |backsub_gmem_m_axi                    |        0|      0|  548|  700|
     |backsub_gmem_offset_m_axi_U              |backsub_gmem_offset_m_axi             |        0|      0|  548|  700|
     |grp_backsub_hls_fptoui_float_i8_fu_1529  |backsub_hls_fptoui_float_i8           |        0|      0|   10|  257|
+    |backsub_sitofp_32ns_32_6_U6              |backsub_sitofp_32ns_32_6              |        0|      0|  340|  554|
     |backsub_sitofp_32ns_32_6_U7              |backsub_sitofp_32ns_32_6              |        0|      0|  340|  554|
     |backsub_sitofp_32ns_32_6_U8              |backsub_sitofp_32ns_32_6              |        0|      0|  340|  554|
-    |backsub_sitofp_32ns_32_6_U9              |backsub_sitofp_32ns_32_6              |        0|      0|  340|  554|
     +-----------------------------------------+--------------------------------------+---------+-------+-----+-----+
     |Total                                    |                                      |        0|     13| 3146| 5336|
     +-----------------------------------------+--------------------------------------+---------+-------+-----+-----+

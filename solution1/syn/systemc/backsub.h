@@ -206,14 +206,14 @@ struct backsub : public sc_module {
     backsub_yuv_frame* yuv_frame_U;
     backsub_grey_frame* grey_frame_U;
     backsub_hls_fptoui_float_i8* grp_backsub_hls_fptoui_float_i8_fu_1529;
+    backsub_fadd_32ns_32ns_32_5_full_dsp<1,5,32,32,32>* backsub_fadd_32ns_32ns_32_5_full_dsp_U1;
     backsub_fadd_32ns_32ns_32_5_full_dsp<1,5,32,32,32>* backsub_fadd_32ns_32ns_32_5_full_dsp_U2;
-    backsub_fadd_32ns_32ns_32_5_full_dsp<1,5,32,32,32>* backsub_fadd_32ns_32ns_32_5_full_dsp_U3;
+    backsub_fmul_32ns_32ns_32_4_max_dsp<1,4,32,32,32>* backsub_fmul_32ns_32ns_32_4_max_dsp_U3;
     backsub_fmul_32ns_32ns_32_4_max_dsp<1,4,32,32,32>* backsub_fmul_32ns_32ns_32_4_max_dsp_U4;
     backsub_fmul_32ns_32ns_32_4_max_dsp<1,4,32,32,32>* backsub_fmul_32ns_32ns_32_4_max_dsp_U5;
-    backsub_fmul_32ns_32ns_32_4_max_dsp<1,4,32,32,32>* backsub_fmul_32ns_32ns_32_4_max_dsp_U6;
+    backsub_sitofp_32ns_32_6<1,6,32,32>* backsub_sitofp_32ns_32_6_U6;
     backsub_sitofp_32ns_32_6<1,6,32,32>* backsub_sitofp_32ns_32_6_U7;
     backsub_sitofp_32ns_32_6<1,6,32,32>* backsub_sitofp_32ns_32_6_U8;
-    backsub_sitofp_32ns_32_6<1,6,32,32>* backsub_sitofp_32ns_32_6_U9;
     sc_signal< sc_logic > ap_rst_n_inv;
     sc_signal< sc_logic > ap_start;
     sc_signal< sc_logic > ap_done;

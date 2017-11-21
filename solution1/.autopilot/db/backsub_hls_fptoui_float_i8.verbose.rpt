@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'backsub_hls_fptoui_float_i8'
 ================================================================
-* Date:           Mon Nov 20 00:46:47 2017
+* Date:           Tue Nov 21 01:04:41 2017
 
 * Version:        2015.4 (Build 1412921 on Wed Nov 18 09:58:55 AM 2015)
 * Project:        backsub_maxi
@@ -243,7 +243,7 @@ STG Binding:
 - Is pipelined: 1
 - Is top level: 0
 Port [ Return ] is wired: 1; IO mode=ap_ctrl_hs:ce=0
-Port [ x]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x7fd0437758e0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
+Port [ x]:  wired=1; compound=0; hidden=0; nouse=0; global=0; static=0; extern=0; dir=0; type=0; mode=0x24a22212dd0; pingpong=0; private_global=0; IO mode=ap_none:ce=0
 ---------------- STG Properties END ------------------
 
 ---------------- Datapath Model BEGIN ----------------
